@@ -1,0 +1,20 @@
+
+  .product-create{
+    width: auto;
+    height: 82vh;
+    margin: 10px;
+    border: 1px solid #555;
+    /* The background property is added to clearly distinguish the borders between drawer and main
+       content */
+    background: #eee;
+  }
+//   .product-create-left{
+//    width: 200px;
+//   }
+  .product-create-left {
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  

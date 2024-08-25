@@ -1,0 +1,37 @@
+# IDE ve Derleyici Dosyaları
+.vs/
+bin/
+obj/
+*.user
+*.suo
+*.ncb
+*.sln.docstates
+*.dbmdl
+
+# .NET ve ASP.NET Proje Dosyaları
+*.dll
+*.exe
+*.pdb
+*.cache
+*.log
+
+# Yüklenmiş Bağımlılıklar
+**/node_modules/
+**/bower_components/
+
+# Gizli Bilgiler ve Konfigürasyon Dosyaları
+ETicaretAPI/Presentation/ETicaretAPI.API/appsettings.json
+*.env
+
+# Geçici Dosyalar
+*.tmp
+*.swp
+*.swo
+
+# Yedekleme Dosyaları
+*.bak
+*.old
+
+# Mac ve Windows Sistem Dosyaları
+.DS_Store
+Thumbs.db
