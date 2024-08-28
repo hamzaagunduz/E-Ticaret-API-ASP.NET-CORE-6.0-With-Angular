@@ -39,7 +39,7 @@ namespace ETicaretAPI.Application.Features.CQRS.Commands.AppUser.LoginUser
             SignInResult result = await _signInManager.CheckPasswordSignInAsync(appUser, request.Password, false);
             if (result.Succeeded)
             {
-                TokenResponseDto token = _tokenHandler.CreateAccessToken(5000);
+                TokenResponseDto token = _tokenHandler.CreateAccessToken(5000,appUser);
                 return new()
                 {
                     Token = token,

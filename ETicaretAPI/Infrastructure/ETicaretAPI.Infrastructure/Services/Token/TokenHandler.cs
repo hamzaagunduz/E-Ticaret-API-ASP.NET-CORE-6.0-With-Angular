@@ -24,7 +24,7 @@ namespace ETicaretAPI.Infrastructure.Services.Token
             _configuration = configuration;
         }
 
-        public TokenResponseDto CreateAccessToken(int second)
+        public TokenResponseDto CreateAccessToken(int second,AppUser appUser)
         {
             TokenResponseDto token = new();
             SymmetricSecurityKey securityKey = new(Encoding.UTF8.GetBytes(_configuration["Token:SecurityKey"]));
@@ -36,8 +36,8 @@ namespace ETicaretAPI.Infrastructure.Services.Token
                issuer: _configuration["Token:Issuer"],
                expires: token.ExpireDate,
                notBefore: DateTime.UtcNow,
-               signingCredentials: signingCredentials
-
+               signingCredentials: signingCredentials,
+               claims:new List<Claim> { new (ClaimTypes.Name, appUser.UserName)}
                );
 
             JwtSecurityTokenHandler tokenHandler = new();

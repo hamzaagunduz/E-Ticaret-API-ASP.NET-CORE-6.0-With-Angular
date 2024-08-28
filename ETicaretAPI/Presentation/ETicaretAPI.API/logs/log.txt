@@ -1,0 +1,517 @@
+2024-08-28 20:47:53.496 +03:00 [INF] User profile is available. Using 'C:\Users\Hamza\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-08-28 20:47:55.431 +03:00 [INF] Now listening on: https://localhost:7213
+2024-08-28 20:47:55.434 +03:00 [INF] Now listening on: http://localhost:5216
+2024-08-28 20:47:55.444 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-08-28 20:47:55.446 +03:00 [INF] Hosting environment: Development
+2024-08-28 20:47:55.449 +03:00 [INF] Content root path: C:\Users\Hamza\Desktop\ETicaretUygulaması\ETicaretAPI\Presentation\ETicaretAPI.API\
+2024-08-28 20:47:56.265 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7213/swagger/index.html - -
+2024-08-28 20:47:56.764 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7213/swagger/index.html - - - 200 - text/html;charset=utf-8 503.4171ms
+2024-08-28 20:47:56.819 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7213/_framework/aspnetcore-browser-refresh.js - -
+2024-08-28 20:47:56.830 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7213/_framework/aspnetcore-browser-refresh.js - - - 200 13766 application/javascript;+charset=utf-8 11.4376ms
+2024-08-28 20:47:56.905 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7213/_vs/browserLink - -
+2024-08-28 20:47:57.331 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7213/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 426.2510ms
+2024-08-28 20:47:57.673 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7213/swagger/v1/swagger.json - -
+2024-08-28 20:47:58.068 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7213/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 394.9498ms
+2024-08-28 20:49:34.429 +03:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:7213/api/user/login - -
+2024-08-28 20:49:34.446 +03:00 [INF] CORS policy execution successful.
+2024-08-28 20:49:34.450 +03:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:7213/api/user/login - - - 204 - - 21.4794ms
+2024-08-28 20:49:34.460 +03:00 [INF] Request starting HTTP/2 POST https://localhost:7213/api/user/login application/json 52
+2024-08-28 20:49:34.464 +03:00 [INF] CORS policy execution successful.
+2024-08-28 20:49:34.497 +03:00 [INF] Executing endpoint 'ETicaretAPI.API.Controllers.UserController.Login (ETicaretAPI.API)'
+2024-08-28 20:49:34.598 +03:00 [INF] Route matched with {action = "Login", controller = "User"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(ETicaretAPI.Application.Features.CQRS.Commands.AppUser.LoginUser.LoginUserCommandRequest) on controller ETicaretAPI.API.Controllers.UserController (ETicaretAPI.API).
+2024-08-28 20:49:38.357 +03:00 [INF] Entity Framework Core 6.0.33 initialized 'ETicaretDbContext' using provider 'Npgsql.EntityFrameworkCore.PostgreSQL:6.0.29+1cc46a0695f052ba0f1ade7046d577882d351f39' with options: None
+2024-08-28 20:49:39.255 +03:00 [INF] Executed DbCommand (49ms) [Parameters=[@__normalizedUserName_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a."AccessFailedCount", a."ConcurrencyStamp", a."Email", a."EmailConfirmed", a."LockoutEnabled", a."LockoutEnd", a."NameSurname", a."NormalizedEmail", a."NormalizedUserName", a."PasswordHash", a."PhoneNumber", a."PhoneNumberConfirmed", a."RefreshToken", a."RefreshTokenLife", a."SecurityStamp", a."TwoFactorEnabled", a."UserName"
+FROM "AspNetUsers" AS a
+WHERE a."NormalizedUserName" = @__normalizedUserName_0
+LIMIT 1
+2024-08-28 20:49:40.117 +03:00 [INF] Executing OkObjectResult, writing value of type 'ETicaretAPI.Application.Features.CQRS.Commands.AppUser.LoginUser.LoginUserCommandResult'.
+2024-08-28 20:49:40.148 +03:00 [INF] Executed action ETicaretAPI.API.Controllers.UserController.Login (ETicaretAPI.API) in 5534.0526ms
+2024-08-28 20:49:40.152 +03:00 [INF] Executed endpoint 'ETicaretAPI.API.Controllers.UserController.Login (ETicaretAPI.API)'
+2024-08-28 20:49:40.169 +03:00 [INF] Request finished HTTP/2 POST https://localhost:7213/api/user/login application/json 52 - 200 - application/json;+charset=utf-8 5708.9877ms
+2024-08-28 20:52:55.513 +03:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:7213/api/products?page=1&%20size=5 - -
+2024-08-28 20:52:55.517 +03:00 [INF] CORS policy execution successful.
+2024-08-28 20:52:55.521 +03:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:7213/api/products?page=1&%20size=5 - - - 204 - - 7.7203ms
+2024-08-28 20:52:55.531 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7213/api/products?page=1&%20size=5 - -
+2024-08-28 20:52:55.533 +03:00 [INF] CORS policy execution successful.
+2024-08-28 20:52:55.769 +03:00 [INF] Executing endpoint 'ETicaretAPI.API.Controllers.ProductsController.GetProducts (ETicaretAPI.API)'
+2024-08-28 20:52:55.783 +03:00 [INF] Route matched with {action = "GetProducts", controller = "Products"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetProducts(ETicaretAPI.Application.Features.Queries.Product.GetAllProduct.GetAllProductQueryRequest) on controller ETicaretAPI.API.Controllers.ProductsController (ETicaretAPI.API).
+2024-08-28 20:52:55.932 +03:00 [INF] Get all products
+2024-08-28 20:52:56.043 +03:00 [INF] Entity Framework Core 6.0.33 initialized 'ETicaretDbContext' using provider 'Npgsql.EntityFrameworkCore.PostgreSQL:6.0.29+1cc46a0695f052ba0f1ade7046d577882d351f39' with options: None
+2024-08-28 20:52:56.114 +03:00 [INF] Executed DbCommand (7ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)::INT
+FROM "Products" AS p
+2024-08-28 20:52:56.184 +03:00 [WRN] The query uses a row limiting operator ('Skip'/'Take') without an 'OrderBy' operator. This may lead to unpredictable results. If the 'Distinct' operator is used after 'OrderBy', then make sure to use the 'OrderBy' operator after 'Distinct' as the ordering would otherwise get erased.
+2024-08-28 20:52:56.189 +03:00 [WRN] The query uses a row limiting operator ('Skip'/'Take') without an 'OrderBy' operator. This may lead to unpredictable results. If the 'Distinct' operator is used after 'OrderBy', then make sure to use the 'OrderBy' operator after 'Distinct' as the ordering would otherwise get erased.
+2024-08-28 20:52:56.517 +03:00 [INF] Executed DbCommand (18ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT t."Id", t."Name", t."Stock", t."Price", t."CreatedTime", t."UpdateTime", t0."Id", t0."CreatedTime", t0."Discriminator", t0."FileName", t0."Path", t0."Storage", t0."Showcase", t0."ProductImageFilesId", t0."ProductsId"
+FROM (
+    SELECT p."Id", p."Name", p."Stock", p."Price", p."CreatedTime", p."UpdateTime"
+    FROM "Products" AS p
+    LIMIT @__p_0 OFFSET @__p_0
+) AS t
+LEFT JOIN (
+    SELECT t1."Id", t1."CreatedTime", t1."Discriminator", t1."FileName", t1."Path", t1."Storage", t1."Showcase", p0."ProductImageFilesId", p0."ProductsId"
+    FROM "ProductProductImageFile" AS p0
+    INNER JOIN (
+        SELECT f."Id", f."CreatedTime", f."Discriminator", f."FileName", f."Path", f."Storage", f."Showcase"
+        FROM "Files" AS f
+        WHERE f."Discriminator" = 'ProductImageFile'
+    ) AS t1 ON p0."ProductImageFilesId" = t1."Id"
+) AS t0 ON t."Id" = t0."ProductsId"
+ORDER BY t."Id", t0."ProductImageFilesId", t0."ProductsId"
+2024-08-28 20:52:56.552 +03:00 [INF] Executing OkObjectResult, writing value of type 'ETicaretAPI.Application.Features.Queries.Product.GetAllProduct.GetAllProductQueryResponse'.
+2024-08-28 20:52:56.580 +03:00 [INF] Executed action ETicaretAPI.API.Controllers.ProductsController.GetProducts (ETicaretAPI.API) in 789.8434ms
+2024-08-28 20:52:56.583 +03:00 [INF] Executed endpoint 'ETicaretAPI.API.Controllers.ProductsController.GetProducts (ETicaretAPI.API)'
+2024-08-28 20:52:56.591 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7213/api/products?page=1&%20size=5 - - - 200 - application/json;+charset=utf-8 1060.0010ms
+2024-08-28 20:59:51.369 +03:00 [INF] User profile is available. Using 'C:\Users\Hamza\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-08-28 20:59:51.797 +03:00 [INF] Now listening on: https://localhost:7213
+2024-08-28 20:59:51.802 +03:00 [INF] Now listening on: http://localhost:5216
+2024-08-28 20:59:51.814 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-08-28 20:59:51.816 +03:00 [INF] Hosting environment: Development
+2024-08-28 20:59:51.818 +03:00 [INF] Content root path: C:\Users\Hamza\Desktop\ETicaretUygulaması\ETicaretAPI\Presentation\ETicaretAPI.API\
+2024-08-28 20:59:52.105 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7213/swagger/index.html - -
+2024-08-28 20:59:52.573 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7213/swagger/index.html - - - 200 - text/html;charset=utf-8 476.2463ms
+2024-08-28 20:59:52.627 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7213/_vs/browserLink - -
+2024-08-28 20:59:52.627 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7213/_framework/aspnetcore-browser-refresh.js - -
+2024-08-28 20:59:52.639 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7213/_framework/aspnetcore-browser-refresh.js - - - 200 13766 application/javascript;+charset=utf-8 12.0913ms
+2024-08-28 20:59:52.743 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7213/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 116.1677ms
+2024-08-28 20:59:53.458 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7213/swagger/v1/swagger.json - -
+2024-08-28 20:59:53.483 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7213/swagger/favicon-32x32.png - -
+2024-08-28 20:59:53.517 +03:00 [INF] Sending file. Request path: '/favicon-32x32.png'. Physical path: 'N/A'
+2024-08-28 20:59:53.520 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7213/swagger/favicon-32x32.png - - - 200 628 image/png 37.4096ms
+2024-08-28 20:59:53.716 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7213/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 258.1845ms
+2024-08-28 21:05:00.142 +03:00 [INF] User profile is available. Using 'C:\Users\Hamza\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-08-28 21:05:00.505 +03:00 [INF] Now listening on: https://localhost:7213
+2024-08-28 21:05:00.507 +03:00 [INF] Now listening on: http://localhost:5216
+2024-08-28 21:05:00.515 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-08-28 21:05:00.517 +03:00 [INF] Hosting environment: Development
+2024-08-28 21:05:00.518 +03:00 [INF] Content root path: C:\Users\Hamza\Desktop\ETicaretUygulaması\ETicaretAPI\Presentation\ETicaretAPI.API\
+2024-08-28 21:05:00.960 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7213/swagger/index.html - -
+2024-08-28 21:05:01.209 +03:00 [INF] Request:
+Protocol: HTTP/2
+Method: GET
+Scheme: https
+PathBase: 
+Path: /swagger/index.html
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7
+Host: localhost:7213
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36
+:method: [Redacted]
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: tr-TR,tr;q=0.9,en-US;q=0.8,en;q=0.7
+Cache-Control: max-age=0
+Referer: [Redacted]
+Upgrade-Insecure-Requests: [Redacted]
+sec-ch-ua: "Not)A;Brand";v="99", "Google Chrome";v="127", "Chromium";v="127"
+sec-ch-ua-mobile: [Redacted]
+sec-ch-ua-platform: [Redacted]
+sec-fetch-site: [Redacted]
+sec-fetch-mode: [Redacted]
+sec-fetch-dest: [Redacted]
+priority: [Redacted]
+2024-08-28 21:05:01.341 +03:00 [INF] Response:
+StatusCode: 200
+Content-Type: text/html;charset=utf-8
+2024-08-28 21:05:01.384 +03:00 [INF] ResponseBody: <!-- HTML for static distribution bundle build -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Swagger UI</title>
+    <link rel="stylesheet" type="text/css" href="./swagger-ui.css">
+    <link rel="icon" type="image/png" href="./favicon-32x32.png" sizes="32x32" />
+    <link rel="icon" type="image/png" href="./favicon-16x16.png" sizes="16x16" />
+    <style>
+
+        html {
+            box-sizing: border-box;
+            overflow: -moz-scrollbars-vertical;
+            overflow-y: scroll;
+        }
+
+        *,
+        *:before,
+        *:after {
+            box-sizing: inherit;
+        }
+
+        body {
+            margin: 0;
+            background: #fafafa;
+        }
+    </style>
+    
+</head>
+
+<body>
+    <div id="swagger-ui"></div>
+
+    <!-- Workaround for https://github.com/swagger-api/swagger-editor/issues/1371 -->
+    <script>
+        if (window.navigator.userAgent.indexOf("Edge") > -1) {
+            console.log("Removing native Edge fetch in favor of swagger-ui's polyfill")
+            window.fetch = undefined;
+        }
+    </script>
+
+    <script src="./swagger-ui-bundle.js"></script>
+    <script src="./swagger-ui-standalone-preset.js"></script>
+    <script>
+        /* Source: https://gist.github.com/lamberta/3768814
+         * Parse a string function definition and return a function object. Does not use eval.
+         * @param {string} str
+         * @return {function}
+         *
+         * Example:
+         *  var f = function (x, y) { return x * y; };
+         *  var g = parseFunction(f.toString());
+         *  g(33, 3); //=> 99
+         */
+        function parseFunction(str) {
+            if (!str) return void (0);
+
+            var fn_body_idx = str.indexOf('{'),
+                fn_body = str.substring(fn_body_idx + 1, str.lastIndexOf('}')),
+                fn_declare = str.substring(0, fn_body_idx),
+                fn_params = fn_declare.substring(fn_declare.indexOf('(') + 1, fn_declare.lastIndexOf(')')),
+                args = fn_params.split(',');
+
+            args.push(fn_body);
+
+            function Fn() {
+                return Function.apply(this, args);
+            }
+            Fn.prototype = Function.prototype;
+
+            return new Fn();
+        }
+
+        window.onload = function () {
+            var configObject = JSON.parse('{"urls":[{"url":"v1/swagger.json","name":"ETicaretAPI.API v1"}],"deepLinking":false,"persistAuthorization":false,"displayOperationId":false,"defaultModelsExpandDepth":1,"defaultModelExpandDepth":1,"defaultModelRendering":"example","displayRequestDuration":false,"docExpansion":"list","showExtensions":false,"showCommonExtensions":false,"supportedSubmitMethods":["get","put","post","delete","options","head","patch","trace"],"tryItOutEnabled":false}');
+            var oauthConfigObject = JSON.parse('{"scopeSeparator":" ","scopes":[],"useBasicAuthenticationWithAccessCodeGrant":false,"usePkceWithAuthorizationCodeGrant":false}');
+
+            // Workaround for https://github.com/swagger-api/swagger-ui/issues/5945
+            configObject.urls.forEach(function (item) {
+                if (item.url.startsWith("http") || item.url.startsWith("/")) return;
+                item.url = window.location.href.replace("index.html", item.url).split('#')[0];
+            });
+
+            // If validatorUrl is not explicitly provided, disable the feature by setting to null
+            if (!configObject.hasOwnProperty("validatorUrl"))
+                configObject.validatorUrl = null
+
+            // If oauth2RedirectUrl isn't specified, use the built-in default
+            if (!configObject.hasOwnProperty("oauth2RedirectUrl"))
+                configObject.oauth2RedirectUrl = (new URL("oauth2-redirect.html", window.location.href)).href;
+
+            // Apply mandatory parameters
+            configObject.dom_id = "#swagger-ui";
+            configObject.presets = [SwaggerUIBundle.presets.apis, SwaggerUIStandalonePreset];
+            configObject.layout = "StandaloneLayout";
+
+            // Parse and add interceptor functions
+            var interceptors = JSON.parse('{"Requ
+2024-08-28 21:05:01.418 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7213/_framework/aspnetcore-browser-refresh.js - -
+2024-08-28 21:05:01.418 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7213/_vs/browserLink - -
+2024-08-28 21:05:01.449 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7213/swagger/index.html - - - 200 - text/html;charset=utf-8 498.8326ms
+2024-08-28 21:05:01.457 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7213/_framework/aspnetcore-browser-refresh.js - - - 200 13766 application/javascript;+charset=utf-8 38.9258ms
+2024-08-28 21:05:01.551 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7213/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 132.7866ms
+2024-08-28 21:05:02.149 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7213/swagger/v1/swagger.json - -
+2024-08-28 21:05:02.154 +03:00 [INF] Request:
+Protocol: HTTP/2
+Method: GET
+Scheme: https
+PathBase: 
+Path: /swagger/v1/swagger.json
+Accept: application/json,*/*
+Host: localhost:7213
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36
+:method: [Redacted]
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: tr-TR,tr;q=0.9,en-US;q=0.8,en;q=0.7
+Referer: [Redacted]
+sec-ch-ua: "Not)A;Brand";v="99", "Google Chrome";v="127", "Chromium";v="127"
+sec-ch-ua-mobile: [Redacted]
+sec-ch-ua-platform: [Redacted]
+sec-fetch-site: [Redacted]
+sec-fetch-mode: [Redacted]
+sec-fetch-dest: [Redacted]
+priority: [Redacted]
+2024-08-28 21:05:02.415 +03:00 [INF] Response:
+StatusCode: 200
+Content-Type: application/json;charset=utf-8
+2024-08-28 21:05:02.419 +03:00 [INF] ResponseBody: {
+  "openapi": "3.0.1",
+  "info": {
+    "title": "ETicaretAPI.API",
+    "version": "1.0"
+  },
+  "paths": {
+    "/api/Products": {
+      "get": {
+        "tags": [
+          "Products"
+        ],
+        "parameters": [
+          {
+            "name": "Page",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          },
+          {
+            "name": "Size",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "Products"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/CreateProductCommandRequest"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/CreateProductCommandRequest"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/CreateProductCommandRequest"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "Products"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/UpdateProductCommandRequest"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/UpdateProductCommandRequest"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/UpdateProductCommandRequest"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/Products/{id}": {
+      "delete": {
+        "tags": [
+          "Products"
+        ],
+        "parameters": [
+          {
+            "name": "Id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/Products/Upload": {
+      "post": {
+        "tags": [
+          "Products"
+        ],
+        "parameters": [
+          {
+            "name": "Id",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "multipart/form-data": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "Files": {
+                    "type": "array",
+                    "items": {
+                      "type": "string",
+                      "format": "binary"
+                    }
+                  }
+                }
+              },
+              "encoding": {
+                "Files": {
+                  "style": "form"
+                }
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/Products/GetProductImages/{id}": {
+      "get": {
+        "tags": [
+          "Products"
+        ],
+        "parameters": [
+          {
+            "name": "Id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/Products/DeleteImages/{id}": {
+      "delete": {
+      
+2024-08-28 21:05:02.458 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7213/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 308.9242ms
+2024-08-28 21:05:55.915 +03:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:7213/api/products?page=1&%20size=5 - -
+2024-08-28 21:05:55.921 +03:00 [INF] Request:
+Protocol: HTTP/2
+Method: OPTIONS
+Scheme: https
+PathBase: 
+Path: /api/products
+Accept: */*
+Host: localhost:7213
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: tr-TR,tr;q=0.9,en-US;q=0.8,en;q=0.7
+Access-Control-Request-Headers: [Redacted]
+Access-Control-Request-Method: [Redacted]
+Origin: [Redacted]
+Referer: [Redacted]
+sec-fetch-mode: [Redacted]
+sec-fetch-site: [Redacted]
+sec-fetch-dest: [Redacted]
+priority: [Redacted]
+2024-08-28 21:05:55.945 +03:00 [INF] CORS policy execution successful.
+2024-08-28 21:05:55.949 +03:00 [INF] Response:
+StatusCode: 204
+Access-Control-Allow-Credentials: [Redacted]
+Access-Control-Allow-Headers: [Redacted]
+Access-Control-Allow-Methods: [Redacted]
+Access-Control-Allow-Origin: [Redacted]
+Vary: [Redacted]
+2024-08-28 21:05:55.953 +03:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:7213/api/products?page=1&%20size=5 - - - 204 - - 37.9480ms
+2024-08-28 21:05:55.964 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7213/api/products?page=1&%20size=5 - -
+2024-08-28 21:05:55.971 +03:00 [INF] Request:
+Protocol: HTTP/2
+Method: GET
+Scheme: https
+PathBase: 
+Path: /api/products
+Accept: application/json, text/plain, */*
+Host: localhost:7213
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36
+:method: [Redacted]
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: tr-TR,tr;q=0.9,en-US;q=0.8,en;q=0.7
+Authorization: [Redacted]
+Origin: [Redacted]
+Referer: [Redacted]
+sec-ch-ua: "Not)A;Brand";v="99", "Google Chrome";v="127", "Chromium";v="127"
+sec-ch-ua-mobile: [Redacted]
+sec-ch-ua-platform: [Redacted]
+sec-fetch-site: [Redacted]
+sec-fetch-mode: [Redacted]
+sec-fetch-dest: [Redacted]
+priority: [Redacted]
+2024-08-28 21:05:55.984 +03:00 [INF] CORS policy execution successful.
+2024-08-28 21:05:56.412 +03:00 [INF] Executing endpoint 'ETicaretAPI.API.Controllers.ProductsController.GetProducts (ETicaretAPI.API)'
+2024-08-28 21:05:56.505 +03:00 [INF] Route matched with {action = "GetProducts", controller = "Products"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetProducts(ETicaretAPI.Application.Features.Queries.Product.GetAllProduct.GetAllProductQueryRequest) on controller ETicaretAPI.API.Controllers.ProductsController (ETicaretAPI.API).
+2024-08-28 21:05:57.006 +03:00 [INF] Get all products
+2024-08-28 21:05:59.143 +03:00 [INF] Entity Framework Core 6.0.33 initialized 'ETicaretDbContext' using provider 'Npgsql.EntityFrameworkCore.PostgreSQL:6.0.29+1cc46a0695f052ba0f1ade7046d577882d351f39' with options: None
+2024-08-28 21:05:59.710 +03:00 [INF] Executed DbCommand (17ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)::INT
+FROM "Products" AS p
+2024-08-28 21:05:59.835 +03:00 [WRN] The query uses a row limiting operator ('Skip'/'Take') without an 'OrderBy' operator. This may lead to unpredictable results. If the 'Distinct' operator is used after 'OrderBy', then make sure to use the 'OrderBy' operator after 'Distinct' as the ordering would otherwise get erased.
+2024-08-28 21:05:59.839 +03:00 [WRN] The query uses a row limiting operator ('Skip'/'Take') without an 'OrderBy' operator. This may lead to unpredictable results. If the 'Distinct' operator is used after 'OrderBy', then make sure to use the 'OrderBy' operator after 'Distinct' as the ordering would otherwise get erased.
+2024-08-28 21:06:00.210 +03:00 [INF] Executed DbCommand (16ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT t."Id", t."Name", t."Stock", t."Price", t."CreatedTime", t."UpdateTime", t0."Id", t0."CreatedTime", t0."Discriminator", t0."FileName", t0."Path", t0."Storage", t0."Showcase", t0."ProductImageFilesId", t0."ProductsId"
+FROM (
+    SELECT p."Id", p."Name", p."Stock", p."Price", p."CreatedTime", p."UpdateTime"
+    FROM "Products" AS p
+    LIMIT @__p_0 OFFSET @__p_0
+) AS t
+LEFT JOIN (
+    SELECT t1."Id", t1."CreatedTime", t1."Discriminator", t1."FileName", t1."Path", t1."Storage", t1."Showcase", p0."ProductImageFilesId", p0."ProductsId"
+    FROM "ProductProductImageFile" AS p0
+    INNER JOIN (
+        SELECT f."Id", f."CreatedTime", f."Discriminator", f."FileName", f."Path", f."Storage", f."Showcase"
+        FROM "Files" AS f
+        WHERE f."Discriminator" = 'ProductImageFile'
+    ) AS t1 ON p0."ProductImageFilesId" = t1."Id"
+) AS t0 ON t."Id" = t0."ProductsId"
+ORDER BY t."Id", t0."ProductImageFilesId", t0."ProductsId"
+2024-08-28 21:06:00.325 +03:00 [INF] Executing OkObjectResult, writing value of type 'ETicaretAPI.Application.Features.Queries.Product.GetAllProduct.GetAllProductQueryResponse'.
+2024-08-28 21:06:00.361 +03:00 [INF] Response:
+StatusCode: 200
+Content-Type: application/json; charset=utf-8
+2024-08-28 21:06:00.380 +03:00 [INF] Executed action ETicaretAPI.API.Controllers.ProductsController.GetProducts (ETicaretAPI.API) in 3854.968ms
+2024-08-28 21:06:00.383 +03:00 [INF] Executed endpoint 'ETicaretAPI.API.Controllers.ProductsController.GetProducts (ETicaretAPI.API)'
+2024-08-28 21:06:00.388 +03:00 [INF] ResponseBody: {"totalCount":28,"products":[{"id":"3614dc22-6103-4e66-a51a-044f409f76bd","name":"Test 3","stock":1,"price":12312,"createdTime":"2024-08-20T21:43:31.480463","updateTime":"0001-01-01T00:00:00","productImageFiles":[{"showcase":false,"products":null,"updateTime":"0001-01-01T00:00:00","fileName":"44707443812106769436463511223291654594377811n.jpg","path":"product-photo/44707443812106769436463511223291654594377811n.jpg","storage":"AzureStorage","id":"1501ff42-a1fc-4d59-b18f-ac22609254b2","createdTime":"2024-08-25T16:31:00.939431"},{"showcase":false,"products":null,"updateTime":"0001-01-01T00:00:00","fileName":"ass.JPG","path":"product-photo/ass.JPG","storage":"AzureStorage","id":"3e45aa46-5b53-4348-8e27-f6b18cd9da08","createdTime":"2024-08-25T16:31:00.939433"},{"showcase":false,"products":null,"updateTime":"0001-01-01T00:00:00","fileName":"proje.jpg","path":"product-photo/proje.jpg","storage":"AzureStorage","id":"84a3d747-2f5f-4726-90ec-dfd3401492e3","createdTime":"2024-08-25T16:31:00.938576"},{"showcase":false,"products":null,"updateTime":"0001-01-01T00:00:00","fileName":"34b004eb-3171-4482-b07d-f5d039d29884.jpg","path":"product-photo/34b004eb-3171-4482-b07d-f5d039d29884.jpg","storage":"AzureStorage","id":"d0904488-9cfb-4b88-a55a-1fd3fb3d7622","createdTime":"2024-08-25T16:31:00.93943"}]},{"id":"41eef926-a399-4e65-9d51-ef219aa6f1e8","name":"TestTest","stock":1,"price":1,"createdTime":"2024-08-20T21:48:43.353882","updateTime":"0001-01-01T00:00:00","productImageFiles":[]},{"id":"669feaa9-1a93-4289-82e7-c46fb25a4591","name":"TestTest","stock":1,"price":1,"createdTime":"2024-08-20T21:48:43.768287","updateTime":"0001-01-01T00:00:00","productImageFiles":[]},{"id":"99a6ed20-d63c-49a9-940e-8ca6fb9862b6","name":"Test 5","stock":1,"price":12312,"createdTime":"2024-08-20T21:43:36.444217","updateTime":"0001-01-01T00:00:00","productImageFiles":[]},{"id":"db5f0d05-5a22-46e6-b962-c4716d5d977f","name":"Test 4","stock":1,"price":12312,"createdTime":"2024-08-20T21:43:33.893143","updateTime":"0001-01-01T00:00:00","productImageFiles":[]}]}
+2024-08-28 21:06:00.428 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7213/api/products?page=1&%20size=5 - - - 200 - application/json;+charset=utf-8 4463.5343ms
