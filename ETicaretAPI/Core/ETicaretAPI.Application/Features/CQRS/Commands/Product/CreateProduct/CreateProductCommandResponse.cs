@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ETicaretAPI.Application.Features.CQRS.Commands.CreateProduct
+namespace ETicaretAPI.Application.Features.Commands.Product.CreateProduct
 {
-    public class CreateProductQueryResponse
+    public class CreateProductCommandResponse
     {
     }
 }

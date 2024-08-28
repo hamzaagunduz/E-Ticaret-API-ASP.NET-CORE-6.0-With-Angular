@@ -6,7 +6,8 @@ import { FormsModule, NgForm } from '@angular/forms';
 import { AdminComponent } from './admin/admin.component';
 
 import { NgxSpinnerModule, NgxSpinnerService } from "ngx-spinner";
-import { CustomToastrService, ToastrMessageType, ToastrPosition } from './services/ui/custom-toastr.service';
+import { JwtModule } from '@auth0/angular-jwt';
+
 
 
 declare var $:any;
@@ -14,7 +15,8 @@ declare var $:any;
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, CurrencyPipe, HomeComponent, FormsModule, CommonModule, AdminComponent,RouterOutlet,RouterLink,NgxSpinnerModule],
+  imports: [RouterOutlet, CurrencyPipe, HomeComponent, FormsModule, CommonModule, AdminComponent,RouterOutlet,RouterLink,NgxSpinnerModule
+  ],
   templateUrl: './app.component.html',
 
   styleUrl: './app.component.scss',

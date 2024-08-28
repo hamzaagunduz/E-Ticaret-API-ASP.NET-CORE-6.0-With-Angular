@@ -50,7 +50,6 @@ async getProducts(){
 
   this.dataSource = new MatTableDataSource<List_Product>(product.products);
   this.paginator.length=product.totalCount;
-  debugger
 
 }
 
