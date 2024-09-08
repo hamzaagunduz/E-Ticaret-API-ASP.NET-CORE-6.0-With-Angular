@@ -16,11 +16,13 @@ using Serilog.Sinks.PostgreSQL;
 using ETicaretAPI.API.Configurations.ColumnWriters;
 using Serilog.Context;
 using Microsoft.AspNetCore.HttpLogging;
+using SıgnalR;
 
 var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddPersistanceServices();
 builder.Services.AddInfrastructureServices();
 builder.Services.AddApplicationServices();
+builder.Services.AddSignalRServices();
 
 
 builder.Services.AddControllers()
@@ -125,5 +127,5 @@ app.Use(async (context, next) =>
 });
 
 app.MapControllers();
-
+app.MapHubs();
 app.Run();

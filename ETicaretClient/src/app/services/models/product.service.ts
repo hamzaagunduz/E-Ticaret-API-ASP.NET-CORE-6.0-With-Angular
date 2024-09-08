@@ -39,7 +39,7 @@ async read(page:number=0,size:number=5, successCallBack?: () => void, errorCallB
 
   const promisData:Promise<{totalCount:number,products:List_Product[]}> = this.httpClientService.get<{totalCount:number,products:List_Product[]}>({
       controller:"products",
-      queryString:`page=${page}& size=${size}`
+      queryString:`page=${page}&size=${size}`
     }).toPromise()
   
 
