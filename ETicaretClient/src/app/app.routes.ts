@@ -20,6 +20,7 @@ export const routes: Routes =
     { path: '', loadComponent: () => import('./ui/components/home/home.component').then(m => m.HomeComponent) },
     { path: 'basket', loadComponent: () => import('./ui/components/baskets/baskets.component').then(m => m.BasketsComponent) },
     { path: 'product', loadComponent: () => import('./ui/components/product/product.component').then(m => m.ProductComponent) },
+    // { path: 'product/:pageno', loadComponent: () => import('./ui/components/product/product.component').then(m => m.ProductComponent) },
     { path: 'register', loadComponent: () => import('./ui/components/register/register.component').then(m => m.RegisterComponent) },
     { path: 'login', loadComponent: () => import('./ui/components/login/login.component').then(m => m.LoginComponent) },
 
